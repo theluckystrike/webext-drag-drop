@@ -1,0 +1,37 @@
+{
+    "name": "webext-drag-drop",
+    "version": "0.1.0",
+    "description": "Drag and drop utilities for Chrome extensions — sortable lists, file drop zones, drag handles, and reorder persistence for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "drag-drop",
+        "sortable",
+        "drag",
+        "drop",
+        "reorder",
+        "manifest-v3",
+        "browser-extension",
+        "file-drop"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-drag-drop.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
